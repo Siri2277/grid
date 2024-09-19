@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "hero hero hero "
+            "menu menu menu"
+            "main main image"
+            "main main extra"
+            "footer footer footer";
+            height: 100vh;
+            width: 90%;
+            text-align: center;
+                }
+        .header, .menu, .hero, .main, .banner, .extra, .image, .footer{
+            display: grid;
+            align-items: center;
+        }
+        .header{
+            grid-area: header;
+            background-color: aqua;
+            color: white;
+        }
+        .hero{
+            grid-area: hero;
+            background-color: palevioletred;
+            color: white;
+        }
+        .menu{
+            grid-area: menu;
+            background-color: yellow;
+            color: black;
+        }
+        .main{
+            grid-area: main;
+            background-color: purple;
+            color: white;
+        }
+        .extra{
+            grid-area: extra;
+            background-color: gray;
+            color: white;
+        }
+        .image{
+            grid-area: image;
+            background-color: goldenrod;
+            color: white;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: red;
+            color: white;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">Header</header>
+        <section class="hero">hero</section>
+        <aside class="menu">menu</aside>
+        <section class="main">main</section>
+        <section class="extra">extra</section>
+        <section class="image">image</section>
+        <footer class="footer">footer</footer>
+    </div>
+</body>
+</html>
